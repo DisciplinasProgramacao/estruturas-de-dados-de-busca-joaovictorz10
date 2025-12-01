@@ -1,7 +1,3 @@
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -11,6 +7,11 @@ import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.function.Function;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 
 public class App {
 
@@ -70,7 +71,7 @@ static int menu() {
     cabecalho();
     System.out.println("1 - Procurar produto, por id");
     System.out.println("2 - Gravar, em arquivo, pedidos de um produto");
-    System.out.println("3 - Relatório de um fornecedor"); 
+    System.out.println("3 - Relatório de um Fornecedor (na tela)"); 
     System.out.println("4 - Gravar, em arquivo, fornecedores de um produto"); 
     System.out.println("0 - Sair");
     System.out.print("Digite sua opção: ");
